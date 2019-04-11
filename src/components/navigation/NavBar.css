@@ -1,0 +1,14 @@
+
+.navbar {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+}
+
+@media (max-width: 400px) {
+    .navbar {
+        flex-direction: column-reverse;
+    }
+}
+

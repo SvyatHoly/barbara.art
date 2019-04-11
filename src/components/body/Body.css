@@ -1,0 +1,9 @@
+.pic {
+    width: 1052px;
+    height: 744px;
+}
+
+body-wrapper {
+    display: flex;
+    justify-content: center;
+}
