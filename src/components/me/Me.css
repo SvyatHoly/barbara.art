@@ -1,0 +1,18 @@
+.me-wrapper {
+
+    display: flex;
+    justify-content: center;
+}
+
+.me-container {
+    width: 90vw;
+    height: 80vh;
+    background: antiquewhite;
+    color: black;
+}
+
+.me-pic {
+    margin-top: 100px;
+    width: 500px;
+
+}

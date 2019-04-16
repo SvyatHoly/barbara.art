@@ -19,18 +19,21 @@
     cursor: pointer;
 }
 
-.nav-item {
-    margin-left: 100px;
-    margin-top: auto;
-    margin-bottom: 20px;
-}
-
-@media (max-width: 400px) {
+@media (min-width: 400px) {
     .nav-item {
-        margin-left: 0px;
-        margin-top: 100px;
+
+        margin-bottom: 20px;
+        /*margin-left: 100px;*/
+        margin-left: 50px;
+        /*margin-bottom: 20px;*/
     }
 }
+
+/*@media (max-width: 400px) {*/
+/*    .nav-item {*/
+/*        margin: initial;*/
+/*    }*/
+/*}*/
 
 .nav-item__pic {
     width: 249px;

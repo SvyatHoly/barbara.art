@@ -3,11 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "arrow-keys-react": "^1.0.6",
+    "coverflow-react": "^0.1.28",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
+    "react-coverflow": "^0.2.20",
     "react-dom": "^16.8.6",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "swipe-react": "^1.0.4",
+    "wheel-react": "^1.0.3"
   },
   "scripts": {
     "start": "react-scripts start",

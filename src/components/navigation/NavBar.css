@@ -1,14 +1,25 @@
+.wrapper {
+    width: 100%;
+}
 
 .navbar {
     display: flex;
-    width: 100%;
-    flex-direction: row-reverse;
+    width: 25vw;
+    height: auto;
     box-sizing: border-box;
+    flex-wrap: wrap;
+    position: relative;
+    left: 25vh;
+    justify-content: space-around;
+    border-top: 20px solid transparent;
 }
 
 @media (max-width: 400px) {
     .navbar {
+        width: auto;
+        left: initial;
         flex-direction: column-reverse;
+        justify-content: space-around;
     }
 }
 
