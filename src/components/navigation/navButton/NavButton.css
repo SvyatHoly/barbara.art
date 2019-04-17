@@ -19,12 +19,12 @@
     cursor: pointer;
 }
 
-@media (min-width: 400px) {
+@media (max-width: 400px) {
     .nav-item {
 
         margin-bottom: 20px;
         /*margin-left: 100px;*/
-        margin-left: 50px;
+        /*margin-left: 50px;*/
         /*margin-bottom: 20px;*/
     }
 }
@@ -35,9 +35,9 @@
 /*    }*/
 /*}*/
 
-.nav-item__pic {
-    width: 249px;
-    height: 181px;
-    margin-left: auto;
-    margin-right: 20px;
+.pic-btn {
+    background-color: initial;
+    border: none;
+    margin: 0;
+    top: 50px;
 }

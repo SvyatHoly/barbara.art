@@ -5,6 +5,7 @@ import Item from './Item/Item';
 import SwipeReact from 'swipe-react';
 import WheelReact from 'wheel-react';
 import ArrowKeysReact from 'arrow-keys-react';
+import './Container.css';
 
 class Container extends React.Component {
     constructor(props) {
@@ -51,7 +52,6 @@ class Container extends React.Component {
         let itemWidth, itemHeight;
 
         let items = this.prepareItems();
-        console.log(items);
         return (
             <div tabIndex="0"
                  style={this.props.containerStyles}
@@ -61,14 +61,15 @@ class Container extends React.Component {
                  ref={(coverflow) => {
                      this.coverflow = coverflow;
                  }}>
-                <button onClick={this.previous}
+                {this.props.width > 400 ?
+                <div id={'left'} onClick={this.previous}
                         style={{
                             width: '100px',
                             height: '100px',
                             position: 'absolute',
                             left: `calc(30% - ${this.props.width}px /2)`,
                             bottom: `calc(100% - ${this.props.height}px / 2)`
-                        }}/>
+                        }}/> : null}
                 {items.map((item) => {
 
                     [itemWidth, itemHeight] = this.calcItemDimensions(item.ratio);
@@ -86,14 +87,15 @@ class Container extends React.Component {
                         direction={this.props.direction}
                         key={item.index}/>;
                 })}
-                <button onClick={this.next}
+                {this.props.width > 400 ?
+                <div id={'right'} onClick={this.next}
                         style={{
                             width: '100px',
                             height: '100px',
                             position: 'absolute',
                             left: `calc(60% + ${this.props.width}px /2)`,
                             bottom: `calc(100% - ${this.props.height}px / 2)`
-                        }}/>
+                        }}/>: null}
             </div>
         );
     }

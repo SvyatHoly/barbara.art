@@ -1,60 +1,32 @@
-body {
-  background-image: url(./pics/homepictureweb1.jpg);
-  background-size: 100%;
-  box-sizing: border-box;
-  /*width: 100vw;*/
-  /*height: 100vh;*/
-  /*height: auto;*/
-  /*width: auto;*/
-  min-height: 100%;
-  min-width: 100%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transition-duration: 0.5s;
-  transition-timing-function: initial;
-  transition-delay: initial;
-  transition-property: opacity;
-  opacity: 1;
+
+#bg {
+  -webkit-transition: filter 2s;
+  transition: filter 2s;
+  background-image: url(./pics/newhomepageq.jpg);
+  background-size: cover;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+
 }
 
-@media (max-width: 1265px) {
-  body {
-    background-image: url(./pics/homemobile.jpg);
+.blurred {
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+}
+
+.clear {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+
+@media (max-width: 400px) {
+  #bg {
+    background-image: url(./pics/newhomemobile.jpg);
   }
 }
 
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

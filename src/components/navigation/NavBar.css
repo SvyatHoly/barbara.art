@@ -4,22 +4,27 @@
 
 .navbar {
     display: flex;
-    width: 25vw;
+    width: 60vw;
     height: auto;
     box-sizing: border-box;
-    flex-wrap: wrap;
-    position: relative;
-    left: 25vh;
+    /*flex-wrap: wrap;*/
+    /*position: relative;*/
     justify-content: space-around;
     border-top: 20px solid transparent;
 }
+
 
 @media (max-width: 400px) {
     .navbar {
         width: auto;
         left: initial;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: space-around;
     }
+}
+
+.home {
+    margin: -60px;
+    width: 300px;
 }
 
