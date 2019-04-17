@@ -16,7 +16,7 @@
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-@media (max-width: 400px) {
+@media (hover: none) {
     .me-pic {
         width: 90vw;
     }

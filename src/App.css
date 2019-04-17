@@ -21,7 +21,7 @@
   -webkit-filter: blur(0px);
 }
 
-@media (max-width: 400px) {
+@media (hover: none) {
   #bg {
     background-image: url(./pics/newhomemobile.jpg);
   }

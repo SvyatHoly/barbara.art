@@ -21,7 +21,7 @@ export default function Carousel() {
 
     return (
         <CoverFlow imagesArr={images}
-                   direction={width > 400 ? 'horizontal' : 'vertical'}
+                   direction={width > 500 ? 'horizontal' : 'vertical'}
                    height={height*0.6}
                    width={width*0.6}/>
     );

@@ -61,7 +61,7 @@ class Container extends React.Component {
                  ref={(coverflow) => {
                      this.coverflow = coverflow;
                  }}>
-                {this.props.width > 400 ?
+                {this.props.direction === 'horizontal' ?
                 <div id={'left'} onClick={this.previous}
                         style={{
                             width: '100px',
@@ -87,7 +87,7 @@ class Container extends React.Component {
                         direction={this.props.direction}
                         key={item.index}/>;
                 })}
-                {this.props.width > 400 ?
+                {this.props.direction === 'horizontal' ?
                 <div id={'right'} onClick={this.next}
                         style={{
                             width: '100px',
