@@ -4,10 +4,8 @@
   "private": true,
   "dependencies": {
     "arrow-keys-react": "^1.0.6",
-    "coverflow-react": "^0.1.28",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "react-coverflow": "^0.2.20",
     "react-dom": "^16.8.6",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
