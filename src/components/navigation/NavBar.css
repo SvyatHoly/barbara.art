@@ -5,26 +5,48 @@
 .navbar {
     display: flex;
     width: 60vw;
-    height: auto;
     box-sizing: border-box;
-    /*flex-wrap: wrap;*/
-    /*position: relative;*/
-    justify-content: space-around;
+    flex-wrap: wrap;
     border-top: 20px solid transparent;
 }
 
+.navbar-homepic {
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+.navbar-homepic:hover {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.nav-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 500px;
+}
 
 @media (hover: none) {
     .navbar {
-        width: auto;
-        left: initial;
+        width: 100%;
         flex-direction: column;
-        justify-content: space-around;
+    }
+    .nav-items {
+        flex-direction: column;
+        height: 30%;
+        width: initial;
     }
 }
 
+#homepic {
+    width: 30px;
+    height: 30px;
+}
+
 .home {
-    margin: -60px;
-    width: 300px;
+    width: 200px;
 }
 

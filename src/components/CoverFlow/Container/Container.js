@@ -62,18 +62,19 @@ class Container extends React.Component {
                      this.coverflow = coverflow;
                  }}>
                 {this.props.direction === 'horizontal' ?
-                <div id={'left'} onClick={this.previous}
-                        style={{
-                            width: '100px',
-                            height: '100px',
-                            position: 'absolute',
-                            left: `calc(30% - ${this.props.width}px /2)`,
-                            bottom: `calc(100% - ${this.props.height}px / 2)`
-                        }}/> : null}
+                    <div id={'left'} onClick={this.previous}
+                         style={{
+                             width: '100px',
+                             height: '100px',
+                             position: 'absolute',
+                             left: `calc(30% - ${this.props.width}px /2)`,
+                             bottom: `calc(100% - ${this.props.height}px / 2)`
+                         }}/> : null}
                 {items.map((item) => {
 
                     [itemWidth, itemHeight] = this.calcItemDimensions(item.ratio);
                     return <Item
+                        handleClick={this.props.handleClick}
                         side={item.side}
                         max={Math.floor(this.calcItemsAmountToRender() / 2)}
                         distance={item.distance}
@@ -88,14 +89,14 @@ class Container extends React.Component {
                         key={item.index}/>;
                 })}
                 {this.props.direction === 'horizontal' ?
-                <div id={'right'} onClick={this.next}
-                        style={{
-                            width: '100px',
-                            height: '100px',
-                            position: 'absolute',
-                            left: `calc(60% + ${this.props.width}px /2)`,
-                            bottom: `calc(100% - ${this.props.height}px / 2)`
-                        }}/>: null}
+                    <div id={'right'} onClick={this.next}
+                         style={{
+                             width: '100px',
+                             height: '100px',
+                             position: 'absolute',
+                             left: `calc(60% + ${this.props.width}px /2)`,
+                             bottom: `calc(100% - ${this.props.height}px / 2)`
+                         }}/> : null}
             </div>
         );
     }

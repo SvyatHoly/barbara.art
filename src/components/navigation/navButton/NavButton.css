@@ -1,12 +1,12 @@
 .btn {
-    border: none;
     width: auto;
     font-family: inherit;
     font-size: 30px;
-    background-color: black;
-    color: antiquewhite;
-    border-right: antiquewhite solid 5px;
-    border-bottom: antiquewhite solid 5px;
+    background: rgba(255, 255, 255, 0.6);
+    /*filter: blur(20px);*/
+    /*filter: blur(1px);*/
+    color: black;
+    border: black solid 5px;
     border-radius: 3px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
@@ -19,25 +19,20 @@
     cursor: pointer;
 }
 
-@media (hover: none) {
-    .nav-item {
-
-        margin-bottom: 20px;
-        /*margin-left: 100px;*/
-        /*margin-left: 50px;*/
-        /*margin-bottom: 20px;*/
-    }
+.nav-visible {
+    display: none;
 }
 
-/*@media (max-width: 400px) {*/
-/*    .nav-item {*/
-/*        margin: initial;*/
-/*    }*/
-/*}*/
+@media (hover: none) {
+    .nav-item {
+        margin-bottom: 20px;
+    }
+    .pic-btn {
+        display: inline-block;
+    }
+}
 
 .pic-btn {
     background-color: initial;
     border: none;
-    margin: 0;
-    top: 50px;
 }

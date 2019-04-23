@@ -9,6 +9,7 @@ class Item extends React.Component {
     this.cssTransformVertical = this.cssTransformVertical.bind(this);
     this.state = {tempTransform: ''};
   }
+
   render(){
     let styles = {
       backgroundImage: `url('${this.props.imgUrl}')`,
@@ -19,7 +20,7 @@ class Item extends React.Component {
       backgroundSize: `${this.props.width}px ${this.props.height}px`,
       display: 'inline-block',
       position: 'absolute',
-      backgroundColor: 'greenyellow',
+      backgroundColor: 'white',
       transitionTimingFunction: 'ease-in-out',
       transition: 'transform 750ms',
       boxShadow: '30px 5px 15px -10px rgba(0,0,0,.15), -30px 5px 15px -10px rgba(0,0,0,.15)',
@@ -45,7 +46,7 @@ class Item extends React.Component {
     let labelJsx = '';
     if (this.props.label !== null) {
       labelJsx = (
-        <div style={{
+        <div onClick={()=>this.props.handleClick(this.props.index)} style={{
           background: 'rgba(0,0,0,0.5)',
           color: 'white',
           padding: '5px',
@@ -116,13 +117,13 @@ class Item extends React.Component {
     const z = (-1*a * distance - a) * 1.08;
 
     const left = {
-      deg: 45,
+      deg: 25,
       x: -1*a * distance,
       z
     };
 
     const right = {
-      deg: -45,
+      deg: -25,
       x: a * distance,
       z
     };

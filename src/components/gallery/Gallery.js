@@ -5,16 +5,23 @@ import {Context} from '../../App';
 
 function Gallery(props) {
     const context = useContext(Context);
-
+    const width = window.innerWidth;
     useEffect(() => {
-        context();
-        return context
+        context.toggleBlur();
+        if (width < 500) {
+            context.changeMenuStatus(false);
+        }
+        return context.toggleBlur
     }, []);
 
+    const handleClick = (id) => {
+        const {history, match} = props;
+        history.push(match.url + '/' + id);
+    };
     return (
         <div className={'body-wrapper'}>
             <div className={'container'}>
-                <Carousel/>
+                <Carousel handleClick={handleClick}/>
             </div>
         </div>
     );

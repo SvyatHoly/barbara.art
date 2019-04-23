@@ -5,7 +5,7 @@ import './NavButton.css';
 function NavButton({link, name, pic}) {
     if (pic) {
         return (
-            <div className={'nav-item'}>
+            <div className={'nav-item--pic'}>
                 <NavLink to={link}>
                     <button className={'pic-btn'}>{pic}</button>
                 </NavLink>

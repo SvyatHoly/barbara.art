@@ -42,6 +42,7 @@ class CoverFlow extends React.Component {
                 boxShadow={this.props.boxShadow} />;
     }
     return <Container
+                handleClick={this.props.handleClick}
                 containerStyles={styles}
                 imagesArr={this.props.imagesArr}
                 labelsArr={this.props.labelsArr}
@@ -68,7 +69,8 @@ CoverFlow.propTypes = {
   emptyMessage: PropTypes.string,
   itemRatio: PropTypes.string,
   handleSelect: PropTypes.func,
-  labelsArr: PropTypes.array
+  labelsArr: PropTypes.array,
+  handleClick: PropTypes.func
 };
 
 CoverFlow.defaultProps = {
