@@ -6,11 +6,13 @@ import Gallery from "./components/gallery/Gallery";
 import Me from "./components/me/Me";
 import FullPic from "./components/gallery/FullPic/FullPic";
 import Contacts from "./components/contacts/Contacts";
+import {images} from './data/data';
 
 export const Context = React.createContext({
     isOpen: true,
     toggleBlur: () => null,
-    changeMenuStatus: () => null
+    changeMenuStatus: () => null,
+    data: {}
 });
 
 class App extends Component {
@@ -44,7 +46,8 @@ class App extends Component {
                     value={{
                         isOpen: this.state.isOpen,
                         toggleBlur: this.toggleBlur,
-                        changeMenuStatus: this.changeMenuStatus
+                        changeMenuStatus: this.changeMenuStatus,
+                        data: images
                     }}>
                     <Layout>
                         <Route path={'/gallery'} exact component={Gallery}/>

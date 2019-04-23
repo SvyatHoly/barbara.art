@@ -1,5 +1,4 @@
 import React, {useContext, useEffect} from 'react';
-import {images} from '../../../data/data';
 import './FullPic.css';
 
 import {Context} from '../../../App';
@@ -22,8 +21,8 @@ const FullPic = (props) => {
             <NavLink to={'/gallery'}>
             <button className={'btn'}>back to gallery</button>
             </NavLink>
-            <div><p><span className={'fullpic-text'}>{images[id].info}</span></p></div>
-            <img className={'fullpic-pic'} src={images[id].src}></img>
+            <div><p><span className={'fullpic-text'}>{context.data[id].info}</span></p></div>
+            <img className={'fullpic-pic'} src={context.data[id].src}></img>
         </div>
     );
 };
