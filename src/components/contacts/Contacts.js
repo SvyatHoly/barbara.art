@@ -19,20 +19,18 @@ const Contacts = () => {
 
     return (
         <div>
+            <p style={{marginBottom: '50px'}}><span className={'contact-text'}>barbarashik.art@gmail.com</span></p>
             <a href={'https://www.instagram.com/barbarashik/'}>
-                <p>
+                <p style={{marginBottom: '50px'}}>
                     <img style={{width: '50px'}} src={instagram}/>
                 </p>
             </a>
             <a href={'https://www.facebook.com/barbara.shilova'}>
-                <p>
+                <p style={{marginBottom: '50px'}}>
                     <img style={{width: '50px'}} src={facebook}/>
                 </p>
             </a>
-            <p>
-                <img style={{width: '50px'}} src={email}/>
-            </p>
-            <p><span className={'contact-text'}>barbarashik.art@gmail.com</span></p>
+
 
         </div>
     );
