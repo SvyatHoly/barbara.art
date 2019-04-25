@@ -1,8 +1,0 @@
-#left {
-    background-image: url(../../../pics/strelka.png);
-}
-
-#right {
-    background-image: url(../../../pics/strelka.png);
-    transform:scaleX(-1);
-}

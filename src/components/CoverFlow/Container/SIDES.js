@@ -1,9 +1,0 @@
-const SIDES = {
-  LEFT: 'LEFT',
-  CENTER: 'CENTER',
-  RIGHT: 'RIGHT',
-  REMOVED_LEFT: 'REMOVED_LEFT',
-  REMOVED_RIGHT: 'REMOVED_RIGHT'
-};
-
-export default SIDES;
