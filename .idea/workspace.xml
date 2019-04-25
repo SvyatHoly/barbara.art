@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9c0d6afb-f5a9-44e6-a5be-c178c909d653" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -81,8 +80,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+            <state relative-caret-position="76">
+              <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -367,7 +366,7 @@
       <workItem from="1554967815924" duration="38000" />
       <workItem from="1554976038504" duration="623000" />
       <workItem from="1554993219197" duration="52642000" />
-      <workItem from="1555579228003" duration="33080000" />
+      <workItem from="1555579228003" duration="33690000" />
     </task>
     <task id="LOCAL-00001" summary="initiL COMMIT">
       <created>1555007627553</created>
@@ -439,14 +438,22 @@
       <option name="project" value="LOCAL" />
       <updated>1556091897515</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="gh pages included">
+      <created>1556195415446</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1556195415446</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99122000" />
+    <option name="totallyTimeSpent" value="99732000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="980" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.252457" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -494,7 +501,8 @@
     <MESSAGE value="added fullpic, bug fixed" />
     <MESSAGE value="node version added" />
     <MESSAGE value="contacts replaced" />
-    <option name="LAST_COMMIT_MESSAGE" value="contacts replaced" />
+    <MESSAGE value="gh pages included" />
+    <option name="LAST_COMMIT_MESSAGE" value="gh pages included" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/coverflow-react/lib/CoverFlow/Container/Container.js">
@@ -812,8 +820,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        <state relative-caret-position="76">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
         </state>
       </provider>
     </entry>
